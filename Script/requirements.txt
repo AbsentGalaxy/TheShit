@@ -1,0 +1,6 @@
+requests
+pprint
+openpyxl
+pandas
+xlsxwriter
+time
