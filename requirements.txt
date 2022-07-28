@@ -1,0 +1,11 @@
+requests
+openpyxl
+pandas
+xlsxwriter
+time
+sys
+colorama
+termcolor
+socket
+json
+
