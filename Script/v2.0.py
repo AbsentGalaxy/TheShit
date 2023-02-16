@@ -64,7 +64,7 @@ class CgminerAPI(object):
 if __name__ == '__main__':
     # Opens the file to be read.
     df = pd.read_excel(
-        #     Put the path to file here
+        ###### Put the path to file here #######
         r'C:\Users\cmill\Desktop\New_CGMINER\Lists\DAVIDS_HR.xlsx')
 
     # Goes through the list of IPs in the "IP" column one at a time
