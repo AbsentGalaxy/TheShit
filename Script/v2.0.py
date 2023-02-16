@@ -65,7 +65,7 @@ if __name__ == '__main__':
     # Opens the file to be read.
     df = pd.read_excel(
         #     Put the path to file here
-        r'C:\Users\cmill\Desktop\New_CGMINER\Lists\S19.xlsx')
+        r'C:\Users\cmill\Desktop\New_CGMINER\Lists\DAVIDS_HR.xlsx')
 
     # Goes through the list of IPs in the "IP" column one at a time
     IP = df["IP"].tolist()
@@ -101,10 +101,10 @@ if __name__ == '__main__':
             idealHR = str(data['STATS'][1]['total_rateideal'])
 
         # Gets Each Boards Hashrate
-            chain0HR = (data['STATS'][1]['chain_hw1'])
-            chain1HR = (data['STATS'][1]['chain_hw2'])
-            chain2HR = (data['STATS'][1]['chain_hw3'])
-            chain3HR = (data['STATS'][1]['chain_hw4'])
+            chain0HR = str(data['STATS'][1]['chain_rate1'])
+            chain1HR = str(data['STATS'][1]['chain_rate2'])
+            chain2HR = str(data['STATS'][1]['chain_rate3'])
+            
 
         # Gets Each Fan Speed
             fan1 = str(data['STATS'][1]["fan1"])
@@ -156,9 +156,9 @@ if __name__ == '__main__':
 
         # Prints the ASIC count for each board and the Frequency
             print("Real Time Hash Rate: " + hashRate)
-            print("Chain 0 has : " + asic0 + " ASIC" + " / " + chain0Freq)
-            print("Chain 1 has : " + asic1 + " ASIC" + " / " + chain1Freq)
-            print("Chain 2 has : " + asic2 + " ASIC" + " / " + chain2Freq)
+            print("Chain 0 has : " + asic0 + " ASIC" + " / " + chain0HR)
+            print("Chain 1 has : " + asic1 + " ASIC" + " / " + chain1HR)
+            print("Chain 2 has : " + asic2 + " ASIC" + " / " + chain2HR)
             
 
         # Fan Speeds
