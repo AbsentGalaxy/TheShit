@@ -62,8 +62,7 @@ class CgminerAPI(object):
 
 
 if __name__ == '__main__':
-    filename = filedialog.askopenfilename(
-        initialdir=r"C:\Users\cmill\Desktop\New_CGMINER\Lists", title="select file")
+    filename = filedialog.askopenfilename()
     # Opens the file to be read.
     df = pd.read_excel(
         ###### Put the path to file here #######
